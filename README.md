@@ -1,3 +1,8 @@
+![image](https://github.com/user-attachments/assets/0e29aeeb-2218-4a9e-b654-901fefe0d369)
+
+
+
+
 # 🚀Deploying-and-Managing-the-EFK-Stack-on-Kubernetes
 The EFK stack combines Elasticsearch, Fluentd, and Kibana to aggregate, store, and visualize logs from multiple sources within a Kubernetes environment.
 
