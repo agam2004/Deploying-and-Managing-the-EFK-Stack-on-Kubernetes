@@ -1,6 +1,6 @@
-Installing Kibana on K8s
+# Installing Kibana on K8s
 
-Deploying Kibana on Kubernetes for Log Visualization
+## Deploying Kibana on Kubernetes for Log Visualization
 In a modern world where applications generate, logs hold a treasure trove of insight. Visualizing and analyzing these logs can be like navigating through a dense fog without a compass.
 
 This is where Kibana, a powerful open-source visualization tool, comes into play.
@@ -13,7 +13,7 @@ Imagine Kibana as the lens that brings the details of your data into focus, allo
 It connects to Elasticsearch, where your logs are stored, and let’s you create visualizations such as charts and graphs.
 These visualization are then organized into dashboards.
 
-🚀 Deploying Kibana
+# 🚀 Deploying Kibana
 Deploying Kibana involves creating Deployment and a Service in Kubernetes. The Deployment ensures Kibana is running and manages replicas, while the Service makes Kibana accessible.
 
 
@@ -21,7 +21,7 @@ Deploying Kibana involves creating Deployment and a Service in Kubernetes. The D
 
 
 
-Creating the Kibana Deployment
+## Creating the Kibana Deployment
 Configuration File: Start by creating a configuration file for the Kibana Deployment.
 
 
@@ -57,15 +57,15 @@ kubectl apply -f kibana-service.yaml
 
 
 
-✨ Accessing Kibana
+# ✨ Accessing Kibana
 With Kibana deployed and exposes, we can new access its interface using the IP of any node in our cluster and the node port specified in the service configuration http://<node-ip>:30001
 
-To explore the raw logs shipped by Fluentd.
+## To explore the raw logs shipped by Fluentd.
 We can use the Kibana Query Language (KQL) to search your data.However, you will first be required to specify an index pattern in order to select the data that has to be explored.
 
 After having explored the logs, we can create dashboards to aggregate our data from various search operations. We can also import/export dashboards(Kibana dashboard are in the .ndjson format)
 
-🎉 Conclusion
+# 🎉 Conclusion
 Congratulations! You've successfully deployed Kibana on Kubernetes and exposed it for access. This setup allows you to visualize and analyze your logs stored in Elasticsearch, turning raw data into actionable insights. As you explore Kibana's capabilities, consider diving deeper into creating custom visualizations and dashboards to tailor the insights to your specific needs.
 Remember, this guide is just the beginning. The world of Kubernetes, Elasticsearch, and Kibana offers vast possibilities for managing and understanding your application logs. Keep experimenting and learning to make the most out of your data.
 
